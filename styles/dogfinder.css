@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
- --primary-color: green;
- --secondary-color: blue;
- --accent-color: lime;
- --background-color: white;
+ --primary-color: #9bcc71;
+ --secondary-color: #8ccce2;
+ --accent-color: #e6d891;
+ --background-color: #caa86b;
+ --letter-color: #eeeeee;
 
  --heading-font: 'lora', serif;
  --heading-font-weight: 700;
@@ -12,14 +13,28 @@
  --paragraph-font-weight: 400;
 }
 
+nav {
+    background-color: var(--background-color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    padding: 20px;
+    background-color: var(--primary-color);
+    max-width: 800px;
+    margin: 0 auto;
+}
 h1, h2, h3 {
-    color: var(--primary-color);
+    color: var(--letter-color);
     font-family: var(--heading-font);
     font-weight: var(--heading-font-weight);
 }
 
 p {
-    color: var(--secondary-color);
+    color: var(--letter-color);
     font-family: var(--paragraph-font);
     font-weight: var(--paragraph-font-weight);
 }
