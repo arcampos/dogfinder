@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+ --primary-color: green;
+ --secondary-color: blue;
+ --accent-color: lime;
+ --background-color: white;
+
+ --heading-font: 'lora', serif;
+ --heading-font-weight: 700;
+ --paragraph-font: 'lora', serif;
+ --paragraph-font-weight: 400;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    font-weight: var(--heading-font-weight);
+}
+
+p {
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+    font-weight: var(--paragraph-font-weight);
+}
