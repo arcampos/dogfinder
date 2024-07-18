@@ -21,9 +21,27 @@ nav {
     align-items: center;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.hero, .services {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.hero {
+    background-color: var(--secondary-color);
+    width: 100%;
+}
+
+.services {
+    background-color: var(--primary-color);
+    width: 100%;
+}
 main {
     padding: 20px;
-    background-color: var(--primary-color);
     max-width: 800px;
     margin: 0 auto;
 }
