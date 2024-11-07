@@ -1,43 +1,30 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="es">
     <head>
-        <link rel="stylesheet" href="styles/dogfinder.css">
         <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>Dog Finder</title>
-        <meta name="description" content="Dog Finder landing page">
-        <meta name="author" content="Arnaldo Campos">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>¡Ayuda a encontrar a mi mascota!</title>
+        <link rel="stylesheet" href="styles/dogfinder.css">
     </head>
     <body>
-        <header>
-            <nav>
-                <a href="#" class="btn">Inicioss</a>
-                <a href="#" class="btn">Entrar a Dogfinder</a>
-                <a href="#" class="btn">Contacto</a>
-            </nav>
-        </header>
-        <main>
-            <button type="menu"><menu></menu></button>
-            <section class="hero">
-                <h1>Encuentra a tu mascota</h1>
-                <img src="images/randy-laybourne-uXJ1dgzYeRA-unsplash.jpg" alt="Lost dog" width="1080">
-                <form>
-                    <input type="text" placeholder="Buscar por codigo">
-                    <button type="submit">Buscar</button>
+        <div class="container">
+            <h1>¡Ayuda a encontrar a Honey</h1>
+            <img src="" alt="Foto de Honey">
+            <p>Honey es una perra de raza galgo, color cafe con blanco, es jugetona y amigable.
+                Se perdió en la zona de [ubicación]. Si lo has visto, por favor contáctame de inmediato.
+            </p>
+            <a href="tel:+56981573178" class="contact-button">¡Llama Ahora!</a>
+
+            <div class="contact-form">
+                <h2>Déjanos un mensaje si lo has visto:</h2>
+                <form action="envio_formulario.php" method="post">
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                    <textarea name="mensaje" placeholder="Tu Mensaje" rows="5" required></textarea>
+                    <button type="submit">Enviar</button>
                 </form>
-            </section>
-            <section class="services">
-                <h2>Nuestros servicios</h2>
-                <div class="service">
-                    <h3>Encuentra a tu mascota</h3>
-                    <img src="images/eric-ward-ISg37AI2A-s-unsplash.jpg" alt="Service 1" width="1080">
-                    <p>Con nosotros puedes encontrar tu mascota perdida.</p>
-                </div>
-                <div class="service">
-                    <h3>Adopción y rescate</h3>
-                    <img src="images/thomas-park-On6bRQRn5lY-unsplash.jpg" alt="Service 2" width="1080">
-                    <p>Nosotros encontraremos tu proxima mascota</p>
-                    <button type="submit">Ver listado de mascotas</button>
-        </main>
+            </div>
+        </div>
+        <script src="js/geolocalizacion.js"></script>
     </body>
 </html>
