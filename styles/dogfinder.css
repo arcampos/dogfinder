@@ -1,58 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-
-:root {
- --primary-color: #9bcc71;
- --secondary-color: #8ccce2;
- --accent-color: #e6d891;
- --background-color: #caa86b;
- --letter-color: #eeeeee;
-
- --heading-font: 'lora', serif;
- --heading-font-weight: 700;
- --paragraph-font: 'lora', serif;
- --paragraph-font-weight: 400;
-}
-
-nav {
-    background-color: var(--background-color);
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-html, body {
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
-    height: 100%;
-}
-.hero, .services {
-    width: 100%;
-    min-height: 100vh;
+    text-align: center;
 }
 
-.hero {
-    background-color: var(--secondary-color);
-    width: 100%;
-}
-
-.services {
-    background-color: var(--primary-color);
-    width: 100%;
-}
-main {
+.container{
+    max-width: 600px;
+    max-width: 20px auto;
+    background-color: #fff;
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-h1, h2, h3 {
-    color: var(--letter-color);
-    font-family: var(--heading-font);
-    font-weight: var(--heading-font-weight);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-p {
-    color: var(--letter-color);
-    font-family: var(--paragraph-font);
-    font-weight: var(--paragraph-font-weight);
+h1{
+    color: #333;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 18px;
+    color: #666;
+}
+
+.contact-button{
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.contact-form{
+    margin-top: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
