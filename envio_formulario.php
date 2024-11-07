@@ -3,7 +3,7 @@
     $email = $_POST['email'];
     $mensaje = $_POST['mensaje'];
 
-    $to = 'tu_email@example.com'; // Cambia esto por tu correo electrónico
+    $to = 'arnold.campos.ar@gmail.com'; // Cambia esto por tu correo electrónico
     $subject = 'Nuevo mensaje sobre tu mascota perdida';
     $body = "Nombre: $nombre\nCorreo: $email\nMensaje:\n$mensaje";
     $headers = 'From: contacto@tusitio.com' . "\r\n" .
